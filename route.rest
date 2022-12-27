@@ -1,0 +1,125 @@
+GET http://localhost:3000/items
+
+###
+
+GET http://localhost:3000/items/63a7be76c907ebaa0bb855a0
+
+###
+
+POST http://localhost:3000/items
+Content-Type: application/json
+
+{
+    "img": "https://cdn.kiranico.net/file/kiranico/mhrise-web/images/items/1074567134.png",
+    "name": "Kulu-Ya-Ku Scale",
+    "description": "With some fine crafting, the milky white color of these scales can be improved.",
+    "monster": "Kulu-Ya-Ku",
+    "rank": "Low",
+    "sources": [
+        {
+            "rank": "Low",
+            "source": "Dropped Materials, Wyvern Riding",
+            "quantity": 1,
+            "chance": 60
+        },
+        {
+            "rank": "Low",
+            "source": "tems Obtained by Palico",
+            "quantity": 1,
+            "chance": 54
+        },
+        {
+            "rank": "Low",
+            "source": "Carves, body",
+            "quantity": 1,
+            "chance": 46
+        },
+        {
+            "rank": "Low",
+            "source": "Dropped Materials",
+            "quantity": 1,
+            "chance": 35
+        },
+        {
+            "rank": "Low",
+            "source": "Target Rewards",
+            "quantity": 1,
+            "chance": 25
+        },
+        {
+            "rank": "Low",
+            "source": "Capture Rewards",
+            "quantity": 2,
+            "chance": 25
+        },
+        {
+            "rank": "Low",
+            "source": "Broken Part Rewards, BodyPart 6",
+            "quantity": 1,
+            "chance": 20
+        }
+    ],
+    "weapons": [
+        {
+            "name": "Kulu's Peck",
+            "weaponType": "Dual Blade",
+            "requiredForCraft": 3
+        },
+        {
+            "name": "Kulu Bludgeon II",
+            "weaponType": "Hammer",
+            "requiredForCraft": 3
+        },
+        {
+            "name": "Kulu Glaive I",
+            "weaponType": "Insect Glaive",
+            "requiredForCraft": 3
+        },
+        {
+            "name": "Kulu's Flight II",
+            "weaponType": "Bow",
+            "requiredForCraft": 3
+        }
+    ],
+    "armor": [
+        {
+            "name": "Kulu-Ya-Ku Helm",
+            "armorType": "Helm",
+            "requiredForCraft": 2
+        },
+        {
+            "name": "Kulu-Ya-Ku Mail",
+            "armorType": "Chest",
+            "requiredForCraft": 3
+        },
+        {
+            "name": "Kulu-Ya-Ku Coil",
+            "armorType": "Waist",
+            "requiredForCraft": 2
+        }
+    ]
+}
+
+###
+
+DELETE http://localhost:3000/items/63a93c806bffaa4c490d978c
+
+###
+
+PATCH http://localhost:3000/items/63a750ff5d468a2705a35701
+Content-Type: application/json
+
+{
+    "name": "New Name"
+}
+
+###
+
+POST http://localhost:3000/items
+Content-Type: application/json
+
+{
+    "img": "https://mhrise.kiranico.com/data/items/1068965621",
+    "name": "Ivy",
+    "description": "A lightweight and extremely strong plant. Used to make nets for pitfall traps."
+}
